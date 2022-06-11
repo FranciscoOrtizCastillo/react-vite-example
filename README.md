@@ -41,5 +41,6 @@ Crear deploy.sh
 npm run build
 
 npx gh-pages -d dist
+npm run deploy
 ```
 
