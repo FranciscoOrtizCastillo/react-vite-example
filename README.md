@@ -19,4 +19,27 @@ Done. Now run:
 npm run build
 
 npm run preview
+
+# Despliegue en Github Pages
+npm i gh-pages
 ```
+
+## Despliegue en Github Pages
+
+https://vitejs.dev/guide/static-deploy.html#github-pages
+
+```
+export default defineConfig({
+  plugins: [react()],
+  base: '/react-vite-example',
+})
+```
+
+Crear deploy.sh
+
+```
+npm run build
+
+npx gh-pages -d dist
+```
+
